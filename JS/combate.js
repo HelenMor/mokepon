@@ -31,8 +31,12 @@ function iniciarJuego()
 
 function seleccionarMascotaJugador()
 {
+
+    let sectionseleccionarMascota= document.getElementById("seleccionar-mascota");
+    sectionseleccionarMascota.style.display='none';
+
     let sectionseleccionarAtaque= document.getElementById("seleccionar-ataque");
-    sectionseleccionarAtaque.style.display='block';
+    sectionseleccionarAtaque.style.display='flex';    
 
     let sectionmensaje= document.getElementById("mensajes");
     sectionmensaje.style.display='block';
@@ -146,13 +150,15 @@ function combate()
 
 function mensaje()
 {
-    let sectionMensaje= document.getElementById('mensajes')
+    let sectionMensaje= document.getElementById('resultado')
     
+    sectionMensaje.innerHTML=resolucionCombate
+
     let parrafo= document.createElement('p')    
     let parrafofinal= document.createElement('p')
 
     parrafo.innerHTML='Tu mascota atacó con ' + ataqueJugador+  ' , y la mascota del enemigo atacó con '+ ataqueEnemigo + '  ' + resolucionCombate
-    sectionMensaje.appendChild(parrafo)
+    // sectionMensaje.appendChild(parrafo)
 
     if (vidasEnemigo==0 || vidasJugador==0)
     { 

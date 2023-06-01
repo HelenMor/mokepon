@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@300&family=Tsukimi+Rounded:wght@300&display=swap');
+body
+{
+    font-family: 'Cherry Bomb One', cursive;    
+    background-color: #068DA9;
+}
+#seleccionar-mascota
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.title
+{
+    color: rgb(243, 87, 87);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+#subtitulo
+{
+    color: rgb(208, 202, 28);
+    font-size: 30px;
+
+}
+
+.tarjetas
+{
+ display: flex;
+ gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 100px;
+    background: rgb(184, 226, 127);
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(201, 135, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+input
+{
+    display: none;
+}
+
+#botonseleccion
+{
+    width: 100px;
+    height: 30px;
+    border: tomato;
+    background: rgb(230, 202, 112);
+    margin-top: 20px;
+    border: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: cursive;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+#seleccionar-ataque{
+
+ flex-direction: column;
+ align-items: center;
+
+}
+.botonAtaque{
+    background-color: rgba(219, 122, 86, 0.851);
+    border-radius:5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;  
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+}
+
+#mensajes
+{
+    width: 180px;
+   
+    background:  rgb(177 220 119 / 77%);
+padding: 20px;
+    margin-top: 20 px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#botonReiniciar{
+    width: 100px;
+    color: white;
+    background: coral;
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px;
+    border: fle;
+    display: flex;
+    justify-content: center;
+
+}
